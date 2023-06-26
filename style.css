@@ -1,0 +1,96 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6232d1;
+    padding: 3px;
+    text-align: center;
+}
+
+main {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 690px;
+    border-style: solid;
+    border: 3px solid #ccc;
+    background-color: aliceblue;
+}
+
+section {
+    padding: 20px;
+    display: block;
+}
+
+.gampang{
+    display: flex;
+    flex-direction: column;
+    border: 3px #ccc;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: antiquewhite;  
+    padding: 15px;
+    width: 500px;
+}
+
+.gampang h2 {
+    text-align: center;
+}
+
+
+.susah, .pakenanya {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#taskInput, #dateInput {
+    margin-bottom: 10px;
+}
+
+#todoList, #doneList {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+#todoList li, #doneList li {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#doneList li.completed {
+    text-decoration: line-through;
+}
+
+
+footer {
+    margin: 0;
+    text-align: center;
+    background-color: #6232d1;
+    padding: 3px;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 400px){
+    main {
+        width: 30;
+    }
+}
